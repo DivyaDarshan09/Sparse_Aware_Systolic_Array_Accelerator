@@ -1,3 +1,29 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Module Name : pe_mac
+//
+// Description:
+//   Baseline Processing Element (PE) used in the 4x4 systolic array.
+//
+// Features:
+//   - Performs Multiply-Accumulate (MAC) operation.
+//   - Propagates A operands horizontally.
+//   - Propagates B operands vertically.
+//   - Tracks MAC utilization statistics.
+//   - No sparsity detection or power optimization.
+//
+// Operation:
+//   sum_out = sum_out + (a_in * b_in)
+//
+// Counters:
+//   total_macs     : Total MAC opportunities received.
+//   effective_macs : MAC operations executed.
+//
+// Author       : Divya Darshan VR
+// Qualification: B.E. Electronics and Communication Engineering
+// Institution  : College of Engineering Guindy (CEG)
+//                Anna University, Chennai
+//////////////////////////////////////////////////////////////////////////////////
+`timescale 1ns/1ps
 module pe_mac #(
     parameter DATA_WIDTH = 8,
     parameter SUM_WIDTH  = 4*DATA_WIDTH,

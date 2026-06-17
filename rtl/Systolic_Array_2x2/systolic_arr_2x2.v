@@ -1,3 +1,34 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Project      : 4x4 Systolic Array Accelerator
+// Module Name  : systolic_arr_4x4
+//
+// Description:
+//   Baseline 2x2 systolic array architecture constructed using
+//   4 Processing Elements (PEs).
+//
+//   Features:
+//   - Standard MAC-based computation.
+//   - No sparsity detection.
+//   - No operand gating.
+//   - All PEs remain active whenever valid data is propagated.
+//   - Used as the reference architecture for power,
+//     area and timing comparison.
+//
+// Data Flow:
+//   - A operands propagate horizontally.
+//   - B operands propagate vertically.
+//   - Valid signals travel with the data stream.
+//   - Each PE performs Multiply-Accumulate operations.
+//
+// Author       : Divya Darshan VR
+// Qualification: B.E. Electronics and Communication Engineering
+// Institution  : College of Engineering Guindy (CEG)
+//                Anna University, Chennai
+//
+// Version      : 1.0
+// Date         : June 2026
+//////////////////////////////////////////////////////////////////////////////////
+
 `timescale 1ns/1ps
 
 `include "pe_mac.v"

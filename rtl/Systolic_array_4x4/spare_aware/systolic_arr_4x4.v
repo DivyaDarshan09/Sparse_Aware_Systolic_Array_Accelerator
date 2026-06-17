@@ -1,3 +1,40 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Project      : Sparse-Aware 4x4 Systolic Array Accelerator
+// Module Name  : systolic_arr_4x4
+//
+// Description:
+//   Low-power 4x4 systolic array architecture incorporating
+//   sparsity-aware computation techniques.
+//
+//   Features:
+//   - Detects sparse (zero-valued) operands.
+//   - Avoids unnecessary MAC activity.
+//   - Reduces switching activity inside Processing Elements.
+//   - Improves dynamic power efficiency.
+//   - Maintains functional equivalence with the baseline design.
+//
+// Low-Power Strategy:
+//   - Sparse operands are identified before multiplication.
+//   - Computation is bypassed whenever multiplication result
+//     is guaranteed to be zero.
+//   - Redundant data movement and internal transitions
+//     are minimized.
+//
+// Data Flow:
+//   - A operands propagate horizontally.
+//   - B operands propagate vertically.
+//   - Valid signals travel with the data stream.
+//   - Active PEs perform MAC operations only when required.
+//
+// Author       : Divya Darshan VR
+// Qualification: B.E. Electronics and Communication Engineering
+// Institution  : College of Engineering Guindy (CEG)
+//                Anna University, Chennai
+//
+// Version      : 1.0
+// Date         : June 2026
+//////////////////////////////////////////////////////////////////////////////////
+
 `timescale 1ns/1ps
 
 module systolic_arr_4x4 #(

@@ -1,3 +1,41 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Module Name : pe_mac
+//
+// Description:
+//   Sparse-aware Processing Element (PE) for a 4x4 systolic array accelerator.
+//
+// Features:
+//   - Performs Multiply-Accumulate (MAC) operations.
+//   - Supports optional low-power mode through operand sparsity detection.
+//   - Propagates A operands horizontally.
+//   - Propagates B operands vertically.
+//   - Tracks MAC utilization statistics.
+//
+// Low-Power Operation:
+//   When LOW_POWER = 1:
+//
+//      if(a_in == 0 || b_in == 0)
+//          MAC operation is skipped.
+//
+//   This reduces unnecessary switching activity and dynamic power
+//   consumption for sparse workloads.
+//
+// Counters:
+//   total_macs
+//      Total MAC opportunities received.
+//
+//   effective_macs
+//      Useful MAC operations actually executed.
+//
+// Author       : Divya Darshan VR
+// Qualification: B.E. Electronics and Communication Engineering
+// Institution  : College of Engineering Guindy (CEG)
+//                Anna University, Chennai
+//
+// Version      : 1.0
+// Date         : June 2026
+//////////////////////////////////////////////////////////////////////////////////
+`timescale 1ps/1ps
 module pe_mac #(
     parameter DATA_WIDTH = 8,
     parameter SUM_WIDTH  = 4*DATA_WIDTH,
