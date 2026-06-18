@@ -1,0 +1,43 @@
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+irun: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+DEFINE mydesign /home/pguser/Desktop/cadence/mydesign
+|
+ncsim: *W,DLCPTH (/home/pguser/cds.lib,5): cds.lib Invalid path '/home/pguser/Desktop/cadence/mydesign' (cds.lib command ignored).
+Loading snapshot worklib.ANTENNA:v .................... Done
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./systolic_arr_2x2_tb.v, line = 43, pos = 12
+           Scope: systolic_arr_2x2_tb
+            Time: 0 FS + 0
+
+T=5000 | pe00=x pe01=x pe10=x pe11=x
+T=15000 | pe00=0 pe01=0 pe10=0 pe11=0
+T=25000 | pe00=5 pe01=0 pe10=0 pe11=0
+T=35000 | pe00=19 pe01=6 pe10=15 pe11=0
+T=45000 | pe00=19 pe01=22 pe10=43 pe11=18
+T=55000 | pe00=19 pe01=22 pe10=43 pe11=50
+T=65000 | pe00=19 pe01=22 pe10=43 pe11=50
+Simulation complete via $finish(1) at time 72 NS + 0
+./systolic_arr_2x2_tb.v:105     $finish;
+ncsim> exit
