@@ -8,7 +8,7 @@
 ## Architecture
 ### 2×2 Systolic Array
 
-![Architecture](docs/2x2_sys_array_arch.png)
+[Architecture](docs/2x2_sys_array_arch.png)
 
 The design consists of four interconnected Processing Elements (PEs) arranged in a 2×2 systolic structure. Data propagates horizontally while weights propagate vertically.
 
@@ -24,7 +24,6 @@ SUM = SUM + (A × B)
 
 ---
 ## RTL Verification
-### RTL Waveform
 
 ![RTL Waveform](images/rtl_waveform.png)
 
@@ -66,7 +65,7 @@ Cadence Genus
 ---
 ### Area Report
 
-![Area Report](synthesis/area_report.rpt)
+[Click here to view the Area Report](synthesis/area_report.rpt)
 
 | Metric     | Value         |
 | ---------- | ------------- |
@@ -75,7 +74,7 @@ Cadence Genus
 ---
 ### Power Report
 
-![Power Report](synthesis/power_report.rpt)
+[Click here to view the Power Report](synthesis/power_report.rpt)
 
 | Metric        | Value       |
 | ------------- | ----------- |
@@ -96,7 +95,7 @@ Cadence Genus
 | Required Time      |    9890     |
 | Slack              |    6043     |
 
-![Timing Report](synthesis/timing_report.rpt)
+[Click here to view the Timing Report](synthesis/timing_report.rpt)
 ---
 ### QoR report
 
