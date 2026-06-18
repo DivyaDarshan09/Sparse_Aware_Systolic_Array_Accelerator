@@ -8,7 +8,7 @@
 ## Architecture
 ### 2×2 Systolic Array
 
-[Architecture](docs/2x2_sys_array_arch.png)
+![Architecture](docs/2x2_sys_array_arch.png)
 
 The design consists of four interconnected Processing Elements (PEs) arranged in a 2×2 systolic structure. Data propagates horizontally while weights propagate vertically.
 
@@ -65,22 +65,22 @@ Cadence Genus
 ---
 ### Area Report
 
-[Click here to view the Area Report](synthesis/area_report.rpt)
-
 | Metric     | Value         |
 | ---------- | ------------- |
 | Total Area | 10923.581 μm² |
 
+[Click here to view the Area Report](synthesis/area_report.rpt)
+
 ---
 ### Power Report
-
-[Click here to view the Power Report](synthesis/power_report.rpt)
 
 | Metric        | Value       |
 | ------------- | ----------- |
 | Leakage Power | 45.337 μW   |
 | Dynamic Power | 1113.465 μW |
 | Total Power   | 1158.802 μW |
+
+[Click here to view the Power Report](synthesis/power_report.rpt)
 
 - Observation:
 
@@ -96,6 +96,7 @@ Cadence Genus
 | Slack              |    6043     |
 
 [Click here to view the Timing Report](synthesis/timing_report.rpt)
+
 ---
 ### QoR report
 
